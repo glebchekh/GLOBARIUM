@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CONTACT ME</title>
+    <meta charset='utf-8'>
+    <link href='stylesheets/style.css' rel='stylesheet'>
+    <link href='stylesheets/screen.css' rel='stylesheet'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'></script>
+    <script src='javascripts/js.js'></script>
+    <link href='https://fonts.googleapis.com/css?family=Jura:400,600' rel='stylesheet' type='text/css'>
+    <script src="javascripts/jquery-2.1.0.min.js"></script>
+    <script src="javascripts/app.js"></script>
+</head>
+<body id="bluepage">
+<header class="allheader"><a href="#contactform"><h2 >CONTACT ME</h2></a></header>
+<div class="clearfix"></div>
+<div id="contactform">
+
+
+    <h2>Send me a massage</h2>
+
+    <div id="form-messages"></div>
+    <form id="ajax-contact" method="post" action="javascripts/mailer.php">
+        <div class="field center">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="NAME" required>
+        </div>
+
+        <div class="field center" >
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="EMAIL" required>
+        </div>
+
+        <div class="field ">
+            <label for="message"></label>
+            <textarea id="message"    name="message" required></textarea>
+        </div>
+
+        <div class="field center" >
+            <button type="submit" >SEND</button>
+        </div>
+
+    </form>
+
+    <!--<p>-->
+    <!--UA: +380959189227-->
+    <!--</p>-->
+    <!--<p>-->
+    <!--email: glebchekh@gmail.com-->
+    <!--</p>-->
+    <!--<p>-->
+    <!--skype: gleb973-->
+    <!--</p>-->
+</div>
+
+
+
+
+<div class="footer"></div>
+<div class="clearfix"></div>
+</body>
+</html>

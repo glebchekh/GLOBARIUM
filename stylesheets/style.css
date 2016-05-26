@@ -1,0 +1,284 @@
+@font-face {
+  font-family: Jura;
+  src: url(/fonts/Jura-Light.ttf);
+}
+/* line 13, ../sass/style.sass */
+.clearfix {
+  clear: both;
+}
+
+/* line 15, ../sass/style.sass */
+.centralize {
+  width: 60%;
+  margin: auto auto;
+}
+
+/* line 20, ../sass/style.sass */
+.pink {
+  z-index: 1;
+  width: 70%;
+  height: 30vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/* line 29, ../sass/style.sass */
+#pinkpage {
+  background-color: pink;
+}
+
+/* line 34, ../sass/style.sass */
+.purple {
+  z-index: 2;
+  width: 40%;
+  height: 40vh;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 47, ../sass/style.sass */
+#purplepage {
+  background-color: mediumpurple;
+}
+
+/* line 49, ../sass/style.sass */
+.material-icons {
+  color: white;
+  float: left;
+  font-size: 4rem !important;
+  margin: 10px;
+}
+
+/* line 55, ../sass/style.sass */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #745bab;
+}
+
+/* line 61, ../sass/style.sass */
+.item {
+  background: black;
+  width: 20em;
+  height: 15em;
+  margin: 1em;
+}
+/* line 66, ../sass/style.sass */
+.item img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 70, ../sass/style.sass */
+.allheader {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+/* line 75, ../sass/style.sass */
+.allheader h2 {
+  position: absolute;
+  color: #fff;
+  font-size: 2rem !important;
+  font-family: Jura, sans-serif;
+  box-sizing: border-box;
+  top: 48%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+}
+
+/* line 90, ../sass/style.sass */
+.orange {
+  z-index: 3;
+  position: absolute;
+  width: 30%;
+  height: 70vh;
+  background-color: #ffbe39;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/* line 100, ../sass/style.sass */
+#orangepage {
+  background-color: #ffbe39;
+}
+
+/* line 103, ../sass/style.sass */
+.green {
+  float: left;
+  z-index: 3;
+  position: absolute;
+  width: 30%;
+  height: 70vh;
+  background-color: #cbff8d;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+/* line 113, ../sass/style.sass */
+#greenpage {
+  background-color: #cbff8d;
+}
+
+/* line 116, ../sass/style.sass */
+.blue {
+  z-index: 4;
+  position: absolute;
+  width: 70%;
+  height: 30vh;
+  background-color: lightskyblue;
+  bottom: 0;
+  right: 0;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 127, ../sass/style.sass */
+#bluepage {
+  background-color: lightskyblue;
+}
+
+/* line 132, ../sass/style.sass */
+#contactform {
+  position: relative;
+  margin: 0 auto;
+  width: 50%;
+  left: 0;
+  right: 0;
+  color: white;
+  font-family: Jura, sans-serif;
+  font-size: 2rem;
+}
+/* line 141, ../sass/style.sass */
+#contactform h2 {
+  text-align: center;
+}
+
+/* line 145, ../sass/style.sass */
+.center {
+  box-sizing: border-box;
+  position: inherit;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 50%;
+}
+/* line 152, ../sass/style.sass */
+.center input {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 157, ../sass/style.sass */
+.center button {
+  width: 50%;
+  height: 50px;
+  background: white;
+  border: none;
+  font-family: Jura, sans-serif;
+  font-size: 1.5rem;
+  margin: 10px 30%;
+}
+
+/* line 167, ../sass/style.sass */
+#message {
+  position: inherit;
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+
+/* line 174, ../sass/style.sass */
+.item-meta {
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  top: 45%;
+  color: #fff;
+  font-size: 2rem !important;
+  font-family: Jura, sans-serif;
+}
+
+/* line 184, ../sass/style.sass */
+.item-hover {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  cursor: pointer;
+}
+/* line 197, ../sass/style.sass */
+.item-hover:hover .item-meta {
+  opacity: 1;
+  color: white;
+  transition: all 700ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* line 202, ../sass/style.sass */
+.colorset1 {
+  width: 50px;
+  height: 50px;
+  background: cornflowerblue;
+  border-radius: 50px;
+}
+
+/* line 208, ../sass/style.sass */
+.colorset2 {
+  width: 50px;
+  height: 50px;
+  background: cadetblue;
+  border-radius: 50px;
+}
+
+/* line 214, ../sass/style.sass */
+.colorset3 {
+  width: 50px;
+  height: 50px;
+  background: cadetblue;
+  border-radius: 50px;
+}
+
+/* line 220, ../sass/style.sass */
+.colorset4 {
+  width: 50px;
+  height: 50px;
+  background: cadetblue;
+  border-radius: 50px;
+}
+
+/* line 225, ../sass/style.sass */
+.footer {
+  position: relative;
+  background: rgba(77, 77, 77, 0.15);
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 233, ../sass/style.sass */
+  #contactform {
+    width: 100%;
+  }
+}
