@@ -8,18 +8,54 @@
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'></script>
     <script src='javascripts/js.js'></script>
+    <script src="javascripts/jquery-2.1.0.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Jura:400,600' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
-<body id="purplepage">
+<body class="purplepage">
 <header class="allheader">
-    <h2>MY WORKS</h2>
+    <div class="pink pinkpage">
+            <div class='item-meta'>
+                <h1>
+                    ABOUT ME
+                </h1>
+            </div>
+        </div>
+    <div class="purple purplepage">
+        <i class="material-icons purpleclose">clear</i>
+        <div class='item-meta'>
+            <h2><a href="#gallery">MY WORKS</a></h2>
+            </div>
+        </div>
+    <div class="blue bluepage">
+            <div class='item-meta'>
+                <h1>
+                    CONTACT ME
+                </h1>
+            </div>
+        </div>
+    <div class="green greenpage">
+        <!--<div class="colorset1"></div>-->
+        <!--<div class="colorset2"></div>-->
+        <!--<div class="colorset3"></div>-->
+        <!--<div class="colorset4"></div>-->
 
-    <i class="material-icons">clear</i></header>
-<div class="clearfix"></div>
+    </div>
 
-<div class="gallery">
+    <div class="orange orangepage">
+            <div class='item-meta'>
+                <h1>
+                    Developments
+                </h1>
+            </div>
+        </div>
+
+
+</header>
+
+
+<div class="gallery" id="gallery">
 
     <div class="item"><a href="http://diz.promo.net.ua/CHIONER/index.html"><img src="images/CHIONER.jpg" alt="CHIONER"></a>
     </div>
@@ -27,5 +63,40 @@
 
 </div>
 <div class="footer"></div>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('a[href*=#]').bind("click", function(e){
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top
+            }, 600);
+            e.preventDefault();
+        });
+        return false;
+    });
+</script>
+
+<script type="text/javascript">
+
+$('.orange').animate({
+height: '0'
+}, 1500);
+$('.pink').animate({
+width: '0'
+}, 1500);
+$('.blue').animate({
+width: '0'
+}, 1500);
+$('.green').animate({
+height: '0'
+}, 1500 );
+$('.purple').delay(1500).animate({
+    height: '100vh',
+    width: '100%'
+}, 100 );
+</script>
+
 </body>
 </html>

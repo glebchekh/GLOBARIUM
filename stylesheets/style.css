@@ -25,11 +25,16 @@
 }
 
 /* line 29, ../sass/style.sass */
-#pinkpage {
+.pinkpage {
   background-color: pink;
 }
 
-/* line 34, ../sass/style.sass */
+/* line 32, ../sass/style.sass */
+.dark {
+  background-color: #755d80;
+}
+
+/* line 35, ../sass/style.sass */
 .purple {
   z-index: 2;
   width: 40%;
@@ -43,21 +48,29 @@
   text-align: center;
   overflow: hidden;
 }
-
 /* line 47, ../sass/style.sass */
-#purplepage {
+.purple a {
+  color: #fff;
+  font-size: 2rem !important;
+  font-family: Jura, sans-serif;
+  text-decoration: none;
+}
+
+/* line 53, ../sass/style.sass */
+.purplepage {
   background-color: mediumpurple;
 }
 
-/* line 49, ../sass/style.sass */
+/* line 56, ../sass/style.sass */
 .material-icons {
   color: white;
   float: left;
   font-size: 4rem !important;
   margin: 10px;
+  cursor: pointer;
 }
 
-/* line 55, ../sass/style.sass */
+/* line 63, ../sass/style.sass */
 .gallery {
   display: flex;
   justify-content: space-around;
@@ -65,41 +78,42 @@
   background: #745bab;
 }
 
-/* line 61, ../sass/style.sass */
+/* line 69, ../sass/style.sass */
 .item {
   background: black;
   width: 20em;
   height: 15em;
   margin: 1em;
 }
-/* line 66, ../sass/style.sass */
+/* line 74, ../sass/style.sass */
 .item img {
   width: 100%;
   height: 100%;
 }
 
-/* line 70, ../sass/style.sass */
+/* line 78, ../sass/style.sass */
 .allheader {
   position: relative;
   width: 100%;
   height: 100vh;
   text-align: center;
 }
-/* line 75, ../sass/style.sass */
+/* line 83, ../sass/style.sass */
 .allheader h2 {
   position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+}
+/* line 88, ../sass/style.sass */
+.allheader h2 a {
   color: #fff;
   font-size: 2rem !important;
   font-family: Jura, sans-serif;
-  box-sizing: border-box;
-  top: 48%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto auto;
+  text-decoration: none;
 }
 
-/* line 90, ../sass/style.sass */
+/* line 98, ../sass/style.sass */
 .orange {
   z-index: 3;
   position: absolute;
@@ -111,12 +125,12 @@
   overflow: hidden;
 }
 
-/* line 100, ../sass/style.sass */
-#orangepage {
+/* line 108, ../sass/style.sass */
+.orangepage {
   background-color: #ffbe39;
 }
 
-/* line 103, ../sass/style.sass */
+/* line 111, ../sass/style.sass */
 .green {
   float: left;
   z-index: 3;
@@ -129,46 +143,54 @@
   overflow: hidden;
 }
 
-/* line 113, ../sass/style.sass */
-#greenpage {
+/* line 121, ../sass/style.sass */
+.greenpage {
   background-color: #cbff8d;
 }
 
-/* line 116, ../sass/style.sass */
+/* line 124, ../sass/style.sass */
 .blue {
   z-index: 4;
   position: absolute;
   width: 70%;
   height: 30vh;
-  background-color: lightskyblue;
   bottom: 0;
   right: 0;
   display: block;
   overflow: hidden;
 }
+/* line 133, ../sass/style.sass */
+.blue a {
+  color: #fff;
+  font-size: 2rem !important;
+  font-family: Jura, sans-serif;
+  text-decoration: none;
+}
 
-/* line 127, ../sass/style.sass */
-#bluepage {
+/* line 139, ../sass/style.sass */
+.bluepage {
   background-color: lightskyblue;
 }
 
-/* line 132, ../sass/style.sass */
+/* line 144, ../sass/style.sass */
 #contactform {
   position: relative;
   margin: 0 auto;
   width: 50%;
+  padding: 10% 0 0 0;
+  height: 80vh;
   left: 0;
   right: 0;
   color: white;
   font-family: Jura, sans-serif;
   font-size: 2rem;
 }
-/* line 141, ../sass/style.sass */
+/* line 155, ../sass/style.sass */
 #contactform h2 {
   text-align: center;
 }
 
-/* line 145, ../sass/style.sass */
+/* line 159, ../sass/style.sass */
 .center {
   box-sizing: border-box;
   position: inherit;
@@ -177,14 +199,15 @@
   margin: 0 auto;
   width: 50%;
 }
-/* line 152, ../sass/style.sass */
+/* line 166, ../sass/style.sass */
 .center input {
   width: 100%;
   height: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-left: 15px;
 }
-/* line 157, ../sass/style.sass */
+/* line 172, ../sass/style.sass */
 .center button {
   width: 50%;
   height: 50px;
@@ -195,16 +218,17 @@
   margin: 10px 30%;
 }
 
-/* line 167, ../sass/style.sass */
+/* line 182, ../sass/style.sass */
 #message {
   position: inherit;
   box-sizing: border-box;
   width: 100%;
   height: 150px;
   resize: none;
+  padding: 15px;
 }
 
-/* line 174, ../sass/style.sass */
+/* line 190, ../sass/style.sass */
 .item-meta {
   opacity: 1;
   position: absolute;
@@ -217,7 +241,7 @@
   font-family: Jura, sans-serif;
 }
 
-/* line 184, ../sass/style.sass */
+/* line 200, ../sass/style.sass */
 .item-hover {
   position: absolute;
   width: 100%;
@@ -228,14 +252,19 @@
   display: block;
   cursor: pointer;
 }
-/* line 197, ../sass/style.sass */
+/* line 209, ../sass/style.sass */
+.item-hover:hover {
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+/* line 213, ../sass/style.sass */
 .item-hover:hover .item-meta {
   opacity: 1;
   color: white;
   transition: all 700ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-/* line 202, ../sass/style.sass */
+/* line 218, ../sass/style.sass */
 .colorset1 {
   width: 50px;
   height: 50px;
@@ -243,7 +272,7 @@
   border-radius: 50px;
 }
 
-/* line 208, ../sass/style.sass */
+/* line 224, ../sass/style.sass */
 .colorset2 {
   width: 50px;
   height: 50px;
@@ -251,7 +280,7 @@
   border-radius: 50px;
 }
 
-/* line 214, ../sass/style.sass */
+/* line 230, ../sass/style.sass */
 .colorset3 {
   width: 50px;
   height: 50px;
@@ -259,7 +288,7 @@
   border-radius: 50px;
 }
 
-/* line 220, ../sass/style.sass */
+/* line 236, ../sass/style.sass */
 .colorset4 {
   width: 50px;
   height: 50px;
@@ -267,7 +296,7 @@
   border-radius: 50px;
 }
 
-/* line 225, ../sass/style.sass */
+/* line 241, ../sass/style.sass */
 .footer {
   position: relative;
   background: rgba(77, 77, 77, 0.15);
@@ -277,7 +306,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  /* line 233, ../sass/style.sass */
+  /* line 249, ../sass/style.sass */
   #contactform {
     width: 100%;
   }

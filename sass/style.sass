@@ -26,10 +26,11 @@ $base-font: Jura, sans-serif
   left: 0
   overflow: hidden
 
-#pinkpage
+.pinkpage
   background-color: $pink-color
 
-
+.dark
+  background-color: #755d80
 
 .purple
   z-index: 2
@@ -43,14 +44,21 @@ $base-font: Jura, sans-serif
   margin: auto auto
   text-align: center
   overflow: hidden
+  a
+    color: #fff
+    font-size: 2rem !important
+    font-family: $base-font
+    text-decoration: none
 
-#purplepage
+.purplepage
   background-color: $purple-color
+
 .material-icons
   color: white
   float: left
   font-size: 4rem !important
   margin: 10px
+  cursor: pointer
 
 .gallery
   display: flex
@@ -74,15 +82,15 @@ $base-font: Jura, sans-serif
   text-align: center
   h2
     position: absolute
-    color: #fff
-    font-size: 2rem !important
-    font-family: $base-font
     box-sizing: border-box
-    top: 48%
-    bottom: 0
     left: 0
     right: 0
-    margin: auto auto
+    a
+      color: #fff
+      font-size: 2rem !important
+      font-family: $base-font
+      text-decoration: none
+
 
 
 
@@ -97,7 +105,7 @@ $base-font: Jura, sans-serif
   left: 0
   overflow: hidden
 
-#orangepage
+.orangepage
   background-color: $orange-color
 
 .green
@@ -110,7 +118,7 @@ $base-font: Jura, sans-serif
   top: 0
   right: 0
   overflow: hidden
-#greenpage
+.greenpage
   background-color: $green-color
 
 .blue
@@ -118,13 +126,17 @@ $base-font: Jura, sans-serif
   position: absolute
   width: 70%
   height: 30vh
-  background-color: $blue-color
   bottom: 0
   right: 0
   display: block
   overflow: hidden
+  a
+    color: #fff
+    font-size: 2rem !important
+    font-family: $base-font
+    text-decoration: none
 
-#bluepage
+.bluepage
   background-color: $blue-color
 
 
@@ -133,6 +145,8 @@ $base-font: Jura, sans-serif
   position: relative
   margin: 0 auto
   width: 50%
+  padding: 10% 0 0 0
+  height: 80vh
   left: 0
   right: 0
   color: white
@@ -154,6 +168,7 @@ $base-font: Jura, sans-serif
     height: 30px
     margin-top: 10px
     margin-bottom: 10px
+    padding-left: 15px
   button
     width: 50%
     height: 50px
@@ -170,6 +185,7 @@ $base-font: Jura, sans-serif
   width: 100%
   height: 150px
   resize: none
+  padding: 15px
 
 .item-meta
   opacity: 1
@@ -192,8 +208,8 @@ $base-font: Jura, sans-serif
   cursor: pointer
   &:hover
 
-    //background: rgba(0, 0, 0, 0.41)
-    //transition: all 600ms cubic-bezier(0.230, 1.000, 0.320, 1.000)
+    background: rgba(0, 0, 0, 0.2)
+    transition: all 2000ms cubic-bezier(0.230, 1.000, 0.320, 1.000)
     .item-meta
       opacity: 1
       color: white /* Белый цвет текста */

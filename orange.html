@@ -3,14 +3,73 @@
 <head>
     <title>Purple</title>
     <meta charset='utf-8'>
-    <link href='stylesheets/style.css' rel='stylesheet'>
+    <link id="style" href='stylesheets/style.css' rel='stylesheet'>
     <link href='stylesheets/screen.css' rel='stylesheet'>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js'></script>
     <script src='javascripts/js.js'></script>
+    <script src="javascripts/jquery-2.1.0.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Jura:400,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 </head>
 <body class="orangepage">
+<header class="allheader">
+<div class="pink pinkpage">
+    <div class='item-meta'>
+        <h1>
+            ABOUT ME
+        </h1>
+    </div>
+</div>
+<div class="purple purplepage">
+    <div class='item-meta'>
+        <h2>MY WORKS</h2>
+    </div>
+</div>
+<div class="blue bluepage">
+    <div class='item-meta'>
+        <h1>
+            CONTACT ME
+        </h1>
+    </div>
+</div>
+<div class="green greenpage">
+    <form>
+        <p>Выбери цвет страниц:</p>
+        <p><input type="radio" name="color" value="yellow">Yellow</p>
+        <p><input type="radio" name="color" value="pink">Pink</p>
+    </form>
+</div>
+
+<div class="orange orangepage">
+    <i class="material-icons orangeclose">clear</i>
+
+<div class='item-meta'>
+        <h1>
+            Developments
+        </h1>
+    </div>
+</div>
+</header>
+
+
+<script type="text/javascript">
+$('.orange').animate({
+    'z-index': '999'
+
+}, 0)
+.animate({
+height: '100vh'
+}, 1000)
+        .animate({
+            width: '100%'
+        },1500)
+
+
+</script>
+
 
 </body>
 </html>
