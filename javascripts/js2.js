@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('#button3').on('click',start_button3);
     $('#button4').on('click',start_button4);
     $('.acc-h').on('click',f_acc);
-    $('img').on('click', f_img);
+    // $('img').on('click', f_img);
 
 
 
@@ -209,11 +209,11 @@ function f_acc(){
 }
 
 
-function f_img(){
-    $('.first').css('background-image','url('+$(this).attr('src')+')');
-    $('.first h2').html($(this).attr('alt'));
-    $(this).css('border','2px solid #52fceb');
-    $('img').not(this).css('border','none');
-
-
-}
+// function f_img(){
+//     $('.first').css('background-image','url('+$(this).attr('src')+')');
+//     $('.first h2').html($(this).attr('alt'));
+//     $(this).css('border','2px solid #52fceb');
+//     $('img').not(this).css('border','none');
+//
+//
+// }

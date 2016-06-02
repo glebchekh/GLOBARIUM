@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('#button3').on('click',start_button3);
     $('#button4').on('click',start_button4);
     $('.acc-h').on('click',f_acc);
-    $('img').on('click', f_img);
+    // $('img').on('click', f_img);
 
 
 
