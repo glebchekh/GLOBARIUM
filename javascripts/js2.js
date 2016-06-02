@@ -37,7 +37,7 @@ function f_closePurple() {
     $("body").click(function () {
         $(this).attr('class', 'purplepage');
     });
-    setTimeout("location.href = 'index.html'", 1500);
+    setTimeout("location.href = 'index2.html'", 1500);
     $(' .material-icons').animate({
         opacity:'0'
 
@@ -68,7 +68,7 @@ function f_closeBlue() {
     $("body").click(function () {
         $(this).attr('id', 'bluepage');
     });
-     setTimeout("location.href = 'index.html'", 3200);
+     setTimeout("location.href = 'index2.html'", 3200);
     $(' .material-icons').animate({
         opacity:'0'
 
@@ -114,7 +114,7 @@ function f_closePink() {
     $("body").click(function () {
         $(this).attr('id', 'pinkpage');
     });
-    setTimeout("location.href = 'index.html'", 2700);
+    setTimeout("location.href = 'index2.html'", 2700);
     $(' .material-icons').animate({
         opacity:'0'
 
@@ -154,7 +154,7 @@ function f_closeOrange() {
     $("body").click(function () {
         $(this).attr('id', 'orangepage');
     });
-    setTimeout("location.href = 'index.html'", 3200);
+    setTimeout("location.href = 'index2.html'", 3200);
     $(' .material-icons').animate({
         opacity:'0'
 
@@ -209,11 +209,11 @@ function f_acc(){
 }
 
 
-// function f_img(){
-//     $('.first').css('background-image','url('+$(this).attr('src')+')');
-//     $('.first h2').html($(this).attr('alt'));
-//     $(this).css('border','2px solid #52fceb');
-//     $('.pic').not(this).css('border','none');
-//
-//
-// }
+function f_img(){
+    $('.first').css('background-image','url('+$(this).attr('src')+')');
+    $('.first h2').html($(this).attr('alt'));
+    $(this).css('border','2px solid #52fceb');
+    $('img').not(this).css('border','none');
+
+
+}

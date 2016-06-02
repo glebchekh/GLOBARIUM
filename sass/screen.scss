@@ -35,6 +35,28 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 
 ::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.11);
+
 }
+
+.colorset2{
+  opacity: 0;
+  margin: 10px auto;
+  width: 200px;
+  height: 100px;
+  background-color: rgba(125,84,106,1);
+  @include filter-gradient(#7d546a, #80c6ad, horizontal);
+  @include background-image(linear-gradient(left, rgba(125,84,106,1) 0%, rgba(255,122,136,1) 26%, rgba(255,205,179,1) 49%, rgba(255,252,204,1) 70%, rgba(128,198,173,1) 97%, rgba(128,198,173,1) 98%));
+}
+.colorset1{
+  opacity: 0;
+  margin: 50px auto;
+  width: 200px;
+  height: 100px;
+  background-color: rgba(255,206,46,1);
+  @include filter-gradient(#ffce2e, #87cefa, horizontal);
+  @include background-image(linear-gradient(left, rgba(255,206,46,1) 0%, rgba(205,255,143,1) 26%, rgba(255,194,204,1) 49%, rgba(147,112,219,1) 71%, rgba(135,206,250,1) 97%, rgba(135,206,250,1) 100%));
+}
+
+
 
 
