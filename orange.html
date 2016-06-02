@@ -36,25 +36,44 @@
     </div>
 </div>
 <div class="green greenpage">
-    <form>
-        <p>Выбери цвет страниц:</p>
-        <p><input type="radio" name="color" value="yellow">Yellow</p>
-        <p><input type="radio" name="color" value="pink">Pink</p>
-    </form>
+
+
 </div>
 
 <div class="orange orangepage">
     <i class="material-icons orangeclose">clear</i>
 
 <div class='item-meta'>
-        <h1>
-            Developments
+        <h1><a href="#devblock">
+            PATTERNS</a>
         </h1>
     </div>
 </div>
 </header>
 
+<div id="devblock">
+    <h2>BUTTONS</h2>
+    <ul id="buttons">
+        <li> <div class="mybutton" id="button1"><p>Thank You!</p><div id="buttonBack1"><p>PUSH ME!</p></div></div></li>
+        <li> <div class="mybutton" id="button2"><div id="buttonBack2"><p>PUSH ME!</p></div><p>Thank You!</p></div></li>
+        <li> <div class="mybutton" id="button3"><div id="buttonBack3"><p>PUSH ME!</p></div></div></li>
+        <li> <div class="mybutton" id="button4"><div id="buttonBack4"><p>PUSH ME!</p></div></div></li>
+    </ul>
+    <h2>ACORDEON</h2>
+    <div class="acc">
+        <div class="acc-h">PUSH ME!</div>
+        <div class="acc-b">Thank You!</div>
+        <div class="acc-h">PUSH ME!</div>
+        <div class="acc-b">Thank You!</div>
+        <div class="acc-h">PUSH ME!</div>
+        <div class="acc-b">Thank You!</div>
+        <div class="acc-h">PUSH ME!</div>
+        <div class="acc-b">Thank You!</div>
+    </div>
+</div>
+<div class="clearfix"></div>
 
+<div class="footer"></div>
 <script type="text/javascript">
 $('.orange').animate({
     'z-index': '999'
@@ -70,6 +89,19 @@ height: '100vh'
 
 </script>
 
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('a[href*=#]').bind("click", function(e){
+            var anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(anchor.attr('href')).offset().top
+            }, 600);
+            e.preventDefault();
+        });
+        return false;
+    });
+</script>
 
 </body>
 </html>

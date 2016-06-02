@@ -2,31 +2,18 @@
  * Created by Gleb.Chekh on 5/23/2016.
  */
 $(document).ready(function() {
-    // $('#ra7').on('input', f_rangeOut);
+    f_close();
     $('.orangeclose').on('click',f_closeOrange);
     $('.purpleclose').on('click',f_closePurple);
     $('.blueclose').on('click',f_closeBlue);
     $('.pinkclose').on('click',f_closePink);
-    f_close();
+    $('#button1').on('click',start_button1);
+    $('#button2').on('click',start_button2);
+    $('#button3').on('click',start_button3);
+    $('#button4').on('click',start_button4);
+    $('.acc-h').on('click',f_acc)
 
 
-    //берем значение имени файла из локального хранилища
-    $('head link').attr('href',  localStorage.getItem('css'));
-
-    $('form').on('change', function(){
-        var color = $('input[name=color]:checked').val();
-
-        if(color=='pink') {
-            localStorage.setItem("css", "style1.css");
-
-            location.reload();
-        }
-        else if (color=='yellow') {
-            localStorage.setItem("css", "style2.css");
-        }
-        // перезагружаем страницу
-        location.reload();
-    });
 
 });
 function f_close(){
@@ -188,7 +175,34 @@ function f_closeOrange() {
 }
 
 
+function start_button1() {
+    $('#buttonBack1').slideToggle('slow')
+}
+
+function start_button2() {
+
+    $("#buttonBack2").animate({
+        width: "toggle"
+    });
+}
 
 
 
+function start_button3() {
+    var colors = ["#9370db", "#ffe116", "#cbff8d","#87CEFA"];
+    var rand = Math.floor(Math.random() * colors.length);
+    $('#button3').css("background-color", colors[rand]);
 
+
+}
+
+
+function start_button4()  {
+
+}
+
+function f_acc(){
+    $('.acc-h').not(this).next().slideUp(500)
+    $(this).next().slideToggle(300);
+
+}

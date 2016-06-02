@@ -1,6 +1,6 @@
-$pink-color: pink
-$purple-color: mediumpurple
-$orange-color: #ffbe39
+$pink-color: #ffce2d
+$purple-color: #9370db
+$orange-color: pink
 $green-color: #cbff8d
 $blue-color: lightskyblue
 @font-face
@@ -9,12 +9,14 @@ $blue-color: lightskyblue
 
 $base-font: Jura, sans-serif
 
-
 .clearfix
   clear: both
+
 .centralize
   width: 60%
   margin: auto auto
+
+
 
 
 .pink
@@ -25,12 +27,65 @@ $base-font: Jura, sans-serif
   top: 0
   left: 0
   overflow: hidden
+  a
+    color: #fff
+    font-size: 2rem !important
+    font-family: $base-font
+    text-decoration: none
 
 .pinkpage
   background-color: $pink-color
 
-.dark
-  background-color: #755d80
+
+#aboutblock
+  position: relative
+  width: 100%
+  color: white
+  font-family: $base-font
+  height: 100vh
+  background-color: desaturate($pink-color, 10% )
+  &:hover
+    #hello
+      border-bottom: 10px solid rgb(181, 162, 82)
+      transition: all 700ms cubic-bezier(0.230, 1.000, 0.320, 1.000)
+    #hello,#about
+      background-color: rgb(181, 162, 82)
+      transition: all 700ms cubic-bezier(0.230, 1.000, 0.320, 1.000)
+
+
+  .one
+    position: absolute
+    width: 100%
+    text-align: center
+    margin: auto auto
+    top: 33px
+    z-index: 999
+  .two
+    width: 100%
+    position: absolute
+    margin: auto auto 10px auto
+    top: 100px
+  #hello
+    padding: 15px
+    width: 100px
+    margin: auto auto
+    border-top: 3px dashed white
+    border-right: 3px dashed white
+    border-left: 3px dashed white
+    border-bottom: 7px solid desaturate($pink-color, 10% )
+    font-size: 2rem
+    text-align: center
+
+
+
+  #about
+    padding: 50px
+    width: 50%
+    font-size: 1.5rem
+    margin: auto auto 100px auto
+
+    border: 3px dashed white
+
 
 .purple
   z-index: 2
@@ -64,7 +119,7 @@ $base-font: Jura, sans-serif
   display: flex
   justify-content: space-around
   flex-wrap: wrap
-  background: #745bab
+  background: $purple-color
 
 .item
   background: black
@@ -104,9 +159,102 @@ $base-font: Jura, sans-serif
   bottom: 0
   left: 0
   overflow: hidden
+  a
+    color: #fff
+    font-size: 2rem !important
+    font-family: $base-font
+    text-decoration: none
 
 .orangepage
   background-color: $orange-color
+
+#devblock
+  position: relative
+  width: 100%
+  height: 100vh
+  background-color: $orange-color
+  text-align: center
+  padding-top: 10%
+  h2
+    color: #fff
+    font-size: 2rem
+    font-family: $base-font
+    margin: 10px
+
+
+
+#buttons
+  margin: 40px auto
+  width: 80%
+  li
+    margin: 5px
+    width: 15%
+    display: inline-block
+
+.mybutton
+  position: relative
+  text-align: center
+  width: 100%
+  height: 50px
+  float: left
+  background-color: #9a63f1
+  font-size: 1rem
+  font-family: $base-font
+  cursor:  pointer
+  color: #ffffff
+  p
+    height: 100%
+    line-height: 3
+#buttonBack1
+  position: absolute
+  &:hover
+    background-color: rgb(80, 234, 208)
+    color: #ffffff
+#buttonBack2:hover
+  position: absolute
+  background-color: rgb(80, 234, 208)
+  color: #ffffff
+#buttonBack3:hover
+  background-color: rgba(186, 186, 186, 0.02)
+  color: #ffffff
+
+#buttonBack1
+  width: 100%
+  height: 50px
+  background-color: #79f1eb
+  bottom: 0
+
+#buttonBack2
+  position: absolute
+  height: 50px
+  background-color: #79f1eb
+  width: 100%
+  z-index: 999
+
+.acc
+  position: relative
+  background: white
+  width: 50%
+  font-size: 1.5rem
+  font-family: $base-font
+  cursor:  pointer
+  color: #ffffff
+  line-height: 1.8
+  margin: 20px auto
+
+
+
+.acc-h
+  background: #52fceb
+  height: 40px
+  border-top: .5px dashed white
+  &:hover
+    background-color: rgb(80, 234, 208)
+.acc-b
+  background-color: #9370db
+  height: 50px
+  display: none
+  border-top: .5px dashed white
 
 .green
   float: left
@@ -122,7 +270,7 @@ $base-font: Jura, sans-serif
   background-color: $green-color
 
 .blue
-  z-index: 4
+  z-index: 1
   position: absolute
   width: 70%
   height: 30vh
@@ -145,7 +293,7 @@ $base-font: Jura, sans-serif
   position: relative
   margin: 0 auto
   width: 50%
-  padding: 10% 0 0 0
+  padding: 10% 0 5% 0
   height: 80vh
   left: 0
   right: 0
@@ -195,7 +343,7 @@ $base-font: Jura, sans-serif
   text-align: center
   top: 45%
   color: #fff
-  font-size: 2rem !important
+  font-size: 1.7rem !important
   font-family: $base-font
 .item-hover
   position: absolute
@@ -208,43 +356,60 @@ $base-font: Jura, sans-serif
   cursor: pointer
   &:hover
 
-    background: rgba(0, 0, 0, 0.2)
+    background: rgba(255, 255, 255, 0.22)
     transition: all 2000ms cubic-bezier(0.230, 1.000, 0.320, 1.000)
     .item-meta
       opacity: 1
       color: white /* Белый цвет текста */
       transition: all 700ms cubic-bezier(0.230, 1.000, 0.320, 1.000)
 
-.colorset1
-  width: 50px
-  height: 50px
-  background: cornflowerblue
-  border-radius: 50px
-
-.colorset2
-  width: 50px
-  height: 50px
-  background: cadetblue
-  border-radius: 50px
-
-.colorset3
-  width: 50px
-  height: 50px
-  background: cadetblue
-  border-radius: 50px
-
-.colorset4
-  width: 50px
-  height: 50px
-  background: cadetblue
-  border-radius: 50px
+//.colorset1
+//  width: 50px
+//  height: 50px
+//  background: cornflowerblue
+//  border-radius: 50px
+//
+//.colorset2
+//  width: 50px
+//  height: 50px
+//  background: cadetblue
+//  border-radius: 50px
+//
+//.colorset3
+//  width: 50px
+//  height: 50px
+//  background: cadetblue
+//  border-radius: 50px
+//
+//.colorset4
+//  width: 50px
+//  height: 50px
+//  background: cadetblue
+//  border-radius: 50px
 .footer
-  position: relative
-  background: rgba(77, 77, 77, 0.15)
-  height: 200px
+  position: absolute
+  background: rgba(9, 9, 9, 0.15)
+  height: 140px
   width: 100%
-  bottom: 0
+
+
 
 @media screen and (max-width : 600px)
   #contactform
     width: 100%
+  #buttons li
+    width: 40%
+  #aboutblock
+    height: 120vh
+    #about
+      width: 80%
+      padding: 10px
+      font-size: 1.5rem !important
+  .acc
+    width: 70% !important
+  .item-meta
+    font-size: 1rem !important
+  form
+    #ajax-contact
+      position: absolute
+
